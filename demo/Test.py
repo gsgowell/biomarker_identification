@@ -28,8 +28,8 @@ epochs = 300   # 70,80,90 100, 110, 120,..., 200,...250,300,350
 Y_train = to_categorical(Y,num_classes)
 Y_test = to_categorical(Y_test,num_classes)
 
-X_train= (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
-X_test = (X_test - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
+X_train= (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))       # X_train = (X - X.mean(axis=0)) / X.std(axis=0)
+X_test = (X_test - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))  # X_test = (X_test - X.mean(axis=0)) / X.std(axis=0)
 
 '''
 model = Sequential()

@@ -1,7 +1,7 @@
 Neural Network-based classifier
 
-This is an example that using the classifier for classification. We used the species level (or gene level) profile of D1 with the marker species (or marker genes) for training and the species level (or gene level) profile of D2 with these marker species (or marker genes) for testing. 'MarkerSpecies_D1_model.h5' and 'MarkerGenes_D1_model.h5'are our trained models. Users can also train the models themselves.   
+This is an example that using the classifier for classification. Since D2 does not have negative samples, 30% negative samples of D1 were randomly selected as the negative samples of D2, and the remain samples of D1 (i.e., D1-) with the biomarkers were used for training. Meanwhile, the samples of D2 and the added negative samples with the biomarkers were used for testing. 'RF_MarkerSpecies_D1_minus_trained.h5' and 'RF_MarkerGenes_D1_minus_trained.h5'are our trained models. Users can also train the models themselves.   
 
 Requirements: Python environment.
 
-Useage: once Python is installed, 'Test.py' can be implemented.
+Useage: once Python is installed, 'Main_for_test.py' can be implemented.
